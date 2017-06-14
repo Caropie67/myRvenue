@@ -162,8 +162,8 @@ data&lt;-read.csv(file = &quot;C:\\MyFolderPath\\Asteroids\\impacts.csv&quot;,
 # convert km to meters
 data$Diam.In.Meters &lt;- data$Asteroid.Diameter..km. * 1000
 
-# filter size
-data_over25 &lt;- filter(data, Diam.In.Meters &gt; 25, Period.Start &lt;= 2217)
+# filter size and year
+data_over25 &lt;- filter(data, Diam.In.Meters &gt; 25 &amp; Period.Start &lt;= 2217)
 
 # reorder by probability (highest first)
 data_over25_sorted &lt;- data_over25[order(-data_over25$Cumulative.Impact.Probability), ]
