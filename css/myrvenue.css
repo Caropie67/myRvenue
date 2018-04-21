@@ -73,6 +73,12 @@
   margin-right:20px;
 }
 
+.infographic .infoImageHoriz {
+  width:230px;
+  height:150px;
+  margin-right:20px;
+}
+
 .infographic .infoMeta {
   padding-top:10px;
   font-size:16px;
